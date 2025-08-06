@@ -37,6 +37,9 @@ class PostController extends Controller
             'description' => ['required','min:5'],
             'post_creator' => ['required', 'exists:users,id']
         ]);
+
+
+        
         // $data = request()->all();
         $title = request()->title;
         $description = request()->description;
